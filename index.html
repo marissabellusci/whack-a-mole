@@ -67,6 +67,7 @@
   const moles = document.querySelectorAll('.mole');
   let highScoreBoard = document.querySelector('.high-score-value');
   let sunExpression = document.querySelector('.sun-smile');
+  let sunSpeech = document.querySelector('.sun-speech');
   let lastHole;
   
 
@@ -112,6 +113,7 @@
       
     highScoreBoard.classList.remove('increasing');
     sunExpression.classList.remove('surprised');
+    sunSpeech.classList.remove('showing');
     
   }
 
@@ -129,6 +131,7 @@
     highScoreBoard.textContent = localStorage.getItem('highScore');
     highScoreBoard.classList.add('increasing');
     sunExpression.classList.add('surprised');
+    sunSpeech.classList.add('showing');
     };
   }
 
