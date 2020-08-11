@@ -195,12 +195,13 @@ button {
   transform: rotate(-20deg);
   font-size: 3rem;
   box-shadow: .5rem 1rem 1rem rgba(0, 0, 0, 0.438);
+  border: solid gray .1px;
 }
 
 .sun-speech.showing {
   display: block;
   top: 4rem;
-  left: 18rem;
+  left: 15rem;
 }
 
 .notch {
@@ -208,9 +209,10 @@ button {
   position: fixed;
   height: 2rem;
   width: 2rem;
-  top: 1.25rem;
-  left: 1.25rem;
-  background: white;
-  transform: rotate(20deg);
+  top: 3.1rem;
+  left: -.4rem;
+  background: linear-gradient(-90deg,white, white, white, rgba(255, 255, 255, 0));
+  box-shadow: .2rem .1rem 0 gray;
+  transform: rotate(-205deg);
   font-size: 3rem;
 }
