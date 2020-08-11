@@ -10,7 +10,7 @@ html {
 
 body {
   padding: 0;
-  margin: 0 6.5rem 0 6.5rem;
+  margin: 0 5rem 0 5rem;
   font-family: 'Amatic SC', cursive;
   display: flex;
   justify-content: space-between;
@@ -22,6 +22,16 @@ h1 {
   font-size: 10rem;
   line-height: 1;
   margin-bottom: 0;
+}
+
+button {
+  box-sizing: border-box;
+  font-size: 6rem;
+  background: none;
+  font-family: 'Amatic SC', cursive;
+  line-height: 1;
+  border-radius: 1rem;
+  box-shadow: .5rem .5rem rgba(223, 175, 4, 0.705)
 }
 
 .score {
@@ -74,21 +84,28 @@ h1 {
 .high-score {
   font-size: 5rem;
   text-align: center;
+  background: none;
+  border-radius: 1rem;
 }
 
-
+.high-score-value {
+  background: rgba(255,255,255,0.2);
+  padding: 0 3rem;
+  line-height: 1;
+  border-radius: 1rem;
+}
 
 .container1 {
   display: flex;
   justify-content: center;
-  border: solid;
+  border: none;
 }
 
 .container2 {
-  border: solid;
+  border: none;
 }
 
 .container3{
-  border: solid;
+  border: none;
   display: block;
 }
