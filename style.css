@@ -1,7 +1,8 @@
 html {
   box-sizing: border-box;
   font-size: 10px;
-  background: #ffc600;
+  height: 100vh;
+  background: linear-gradient(rgb(171, 219, 228), rgb(171, 219, 228), rgb(77, 68, 32),rgba(54, 45, 9, 0.781),rgb(54, 45, 9));
 }
 
 *, *:before, *:after {
@@ -15,6 +16,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 100vh;
+  width: auto;
 }
 
 h1 {
@@ -31,11 +34,12 @@ button {
   font-family: 'Amatic SC', cursive;
   line-height: 1;
   border-radius: 1rem;
-  box-shadow: .5rem .5rem rgba(223, 175, 4, 0.705)
+  background: rgba(3, 243, 3, 0.541);
+  box-shadow: .5rem .5rem rgba(24, 24, 23, 0.027);
 }
 
 .score {
-  background: rgba(255,255,255,0.2);
+  background: rgba(255, 255, 255, 0.301);
   padding: 0 3rem;
   line-height: 1;
   border-radius: 1rem;
@@ -84,7 +88,8 @@ button {
 .high-score {
   font-size: 5rem;
   text-align: center;
-  background: none;
+  padding: 2rem;
+  background: rgba(3, 243, 3, 0.541);;
   border-radius: 1rem;
 }
 
