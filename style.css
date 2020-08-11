@@ -34,7 +34,7 @@ button {
   font-family: 'Amatic SC', cursive;
   line-height: 1;
   border-radius: 1rem;
-  background: rgba(3, 243, 3, 0.541);
+  background: rgba(3, 243, 3, 0.322);
   box-shadow: .5rem .5rem rgba(24, 24, 23, 0.027);
 }
 
@@ -89,7 +89,7 @@ button {
   font-size: 5rem;
   text-align: center;
   padding: 2rem;
-  background: rgba(3, 243, 3, 0.541);;
+  background:  rgba(3, 243, 3, 0.322);
   border-radius: 1rem;
 }
 
