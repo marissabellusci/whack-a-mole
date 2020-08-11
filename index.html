@@ -83,11 +83,19 @@
     score++;
     this.classList.remove('up');
     scoreBoard.textContent = score;
+
+    let highScore = localStorage.getItem('highScore');
+
+    if(score > highScore){
+    localStorage.clear();
+    localStorage.setItem('highScore',score);
+    };
   }
 
   moles.forEach(mole => mole.addEventListener('click',headBonk));
 
-  
+
+
 
 
 </script>
