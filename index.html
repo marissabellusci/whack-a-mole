@@ -50,7 +50,9 @@
   const holes = document.querySelectorAll('.hole');
   const scoreBoard = document.querySelector('.score');
   const moles = document.querySelectorAll('.mole');
+  let highScoreBoard = document.querySelector('.high-score-value');
   let lastHole;
+  
 
 
   let score = 0;
@@ -103,13 +105,13 @@
     if(score > highScore){
     localStorage.clear();
     localStorage.setItem('highScore',score);
+    highScoreBoard.textContent = localStorage.getItem('highScore');
     };
   }
 
   moles.forEach(mole => mole.addEventListener('click',headBonk));
 
-
-
+  highScoreBoard.textContent = localStorage.getItem('highScore');
 
 
 </script>
