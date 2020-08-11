@@ -60,6 +60,7 @@
   const scoreBoard = document.querySelector('.score');
   const moles = document.querySelectorAll('.mole');
   let highScoreBoard = document.querySelector('.high-score-value');
+  let sunExpression = document.querySelector('.sun-smile');
   let lastHole;
   
 
@@ -93,6 +94,7 @@
       hole.classList.remove('up');
       if(!timeUp) peep();
     }, time);
+
   }
 
   function startGame(){
@@ -101,6 +103,10 @@
     score = 0;
     peep();
   setTimeout(() => timeUp = true, 10000)
+      
+    highScoreBoard.classList.remove('increasing');
+    sunExpression.classList.remove('surprised');
+    
   }
 
   function headBonk(e){
@@ -116,6 +122,7 @@
     localStorage.setItem('highScore',score);
     highScoreBoard.textContent = localStorage.getItem('highScore');
     highScoreBoard.classList.add('increasing');
+    sunExpression.classList.add('surprised');
     };
   }
 

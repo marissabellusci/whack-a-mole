@@ -167,3 +167,11 @@ button {
   border-bottom: black solid;
   background: none;
 }
+
+.sun-smile.surprised {
+  height: 6.5rem;
+  width: 8rem;
+  top: 9.5rem;
+  left: 6rem;
+  background: black;
+}
