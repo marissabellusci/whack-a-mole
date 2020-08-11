@@ -100,6 +100,11 @@ button {
   border-radius: 1rem;
 }
 
+.high-score-value.increasing {
+  text-shadow: 3px 3px 1px white;
+  border: dotted white;
+}
+
 .container1 {
   display: flex;
   justify-content: center;
@@ -113,4 +118,52 @@ button {
 .container3{
   border: none;
   display: block;
+}
+
+.sun {
+  z-index: 1;
+  position: fixed;
+  top: -20rem;
+  left: -20rem;
+  background: rgba(255, 255, 0, 0.774);
+  width: 40rem;
+  height: 40rem;
+  border-radius: 50%;
+}
+
+.sun-eyeL {
+  z-index: 1;
+  position: fixed;
+  top: 7rem;
+  left: 3rem;
+  height: 4rem;
+  width: 2rem;
+  border-radius: 50%;
+  background: black;
+  transform: rotate(-30deg);
+}
+
+.sun-eyeR {
+  z-index: 1;
+  position: fixed;
+  top: 4rem;
+  left: 8rem;
+  height: 4rem;
+  width: 2rem;
+  border-radius: 50%;
+  background: black;
+  transform: rotate(-30deg);
+}
+
+.sun-smile{
+  z-index: 1;
+  position: fixed;
+  top: 9rem;
+  left: 3rem;
+  height: 5rem;
+  width: 12rem;
+  transform: rotate(-35deg);
+  border-radius: 50%;
+  border-bottom: black solid;
+  background: none;
 }
