@@ -37,7 +37,11 @@
   const scoreBoard = document.querySelector('.score');
   const moles = document.querySelectorAll('.mole');
   let lastHole;
+
+
+  let score = 0;
   let timeUp = false;
+  
 
   function randTime(min,max){
     return Math.round(Math.random() * (max-min) + min);
@@ -69,9 +73,17 @@
   function startGame(){
     scoreBoard.textContent = 0;
     timeUp = false;
+    score = 0;
     peep();
   setTimeout(() => timeUp = true, 10000)
   }
+
+  function headBonk(e){
+    if(!e.isTrusted) return; //if someone is cheating!
+    console.log(e);
+  }
+
+  moles.forEach(mole => mole.addEventListener('click',headBonk));
 
   
 
