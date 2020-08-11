@@ -80,7 +80,9 @@
 
   function headBonk(e){
     if(!e.isTrusted) return; //if someone is cheating!
-    console.log(e);
+    score++;
+    this.classList.remove('up');
+    scoreBoard.textContent = score;
   }
 
   moles.forEach(mole => mole.addEventListener('click',headBonk));
